@@ -27,11 +27,11 @@ fi
 
 cp ./.bash_profile $HOME/.bash_profile
 cp ./.vimrc $HOME/.vimrc
-cp ./.tmux.conf $HOME/.tmux.conf
+#cp ./.tmux.conf $HOME/.tmux.conf
 
 sudo cp ./.bash_profile /root/.bash_profile
 sudo cp ./.vimrc /root/.vimrc
-sudo cp ./.tmux.conf /root/.tmux.conf
+#sudo cp ./.tmux.conf /root/.tmux.conf
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ~/.tmux/plugins/tpm/scripts/install_plugins.sh
