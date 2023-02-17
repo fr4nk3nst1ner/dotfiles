@@ -18,7 +18,16 @@ if [ -f /etc/os-release ]; then
                 tree \
                 git \
                 jq \
-                net-tools 
+                net-tools \
+                nmap \
+                zsh \
+                s3fs \
+                awscli \
+                tree \
+                ifmetric \
+                glances \
+                acl \
+                ansible
 
         curl -fsSL https://get.docker.com | sudo bash
         sudo usermod -aG docker ubuntu
