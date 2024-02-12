@@ -107,27 +107,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-alias k='kubectl'
-alias kgp='kubectl get pods'
-alias kgpa='kubectl get pods --all-namespaces'
-alias kgpw='kgp --watch'
-alias kgpwide='kgp -o wide'
-alias kep='kubectl edit pods'
-alias kdp='kubectl describe pods'
-alias kdelp='kubectl delete pods'
-alias kgpall='kubectl get pods --all-namespaces -o wide'
-alias kgs='kubectl get svc'
-alias kgsa='kubectl get svc --all-namespaces'
-alias kgsw='kgs --watch'
-alias kgswide='kgs -o wide'
-alias kes='kubectl edit svc'
-alias kds='kubectl descibe svc'
-alias kdels='kubectl delete svc'
-source <(kubectl completion zsh)
+
 export TF_LOG="DEBUG"
 ZSH_DISABLE_COMPFIX=true
 ZSH_DISABLE_COMPFIX=true
-[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 
 # add to path for aws_completer
 export PATH=/usr/bin/:$PATH
