@@ -36,10 +36,14 @@ fi
 
 cp ./.bash_profile $HOME/.bash_profile
 cp ./.vimrc $HOME/.vimrc
+mkdir $HOME/.vim_runtime
+cp -r ./vimrcs $HOME/.vim_runtime/
 #cp ./.tmux.conf $HOME/.tmux.conf
 
 sudo cp ./.bash_profile /root/.bash_profile
 sudo cp ./.vimrc /root/.vimrc
+mkdir /root/.vim_runtime
+cp -r ./vimrcs /root/.vim_runtime/
 #sudo cp ./.tmux.conf /root/.tmux.conf
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
